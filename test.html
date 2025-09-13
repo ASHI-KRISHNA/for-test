@@ -1,18 +1,38 @@
+HTML Result Skip Results Iframe
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Block vs Inline Elements</title>
+  <style>
+    .box {
+      padding: 10px;
+      border: 2px solid #4CAF50;
+      margin: 5px;
+    }
+    .block {
+      background-color: #e0f7fa;
+    }
+    .inline {
+      background-color: #fce4ec;
+    }
+  </style>
 </head>
 <body>
-    <select>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
-        <option value="4">Option 4</option>
-        <option value="5">Option 5</option>
-        <option value="6">Option 6</option>
-    </select>
+
+  <h2>Block Elements</h2>
+  <div class="box block">This is a &lt;div&gt; (block)</div>
+  <p class="box block">This is a &lt;p&gt; (block)</p>
+  <h3 class="box block">This is an &lt;h3&gt; (block)</h3>
+
+  <h2>Inline Elements</h2>
+  <p>
+    This is a sentence with
+    <span class="box inline">&lt;span&gt;</span>,
+    <a href="#" class="box inline">&lt;a&gt;</a>, and
+    <strong class="box inline">&lt;strong&gt;</strong>
+    elements inside it.
+  </p>
+
 </body>
 </html>
